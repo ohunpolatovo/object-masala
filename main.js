@@ -93,3 +93,107 @@
 //   },
 // };
 // console.log(user.hobbies[0], user.addres.city);
+//==============================================================
+// 50.Kinoteatrga bollar kino ko’rgani kirmoqchi bunda 2ta talab
+// mavjud. Shunda funksiya 2ta argument qabul qiladi. Bolaning
+// yoshini va ota-onasi bilan birgami degan boolean qiymat. Agar
+// bolaning yoshi kamida 15 bo’lsa va ota-onasi bilan birga bo’lsa
+// funksiya true qaytarsin aks holda false.
+// function kinogaKirish(yosh, otaOna) {
+//   if (yosh >= 15 && otaOna) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(kinogaKirish(15, false));
+//======================================================================
+// 51.Quyidagi namunalarda kamchilik bor funksiya aslida har
+// bir massivning elementiga 1 qo’shishi kerak. Funksiya to’g’ri
+// yasang.
+// let massiv = [0, 1, 2, 3];
+// function oshirBirga(arr) {
+//   let qosh = [];
+//   for (let i of arr) {
+//     qosh.push(i + 1);
+//   }
+//   return qosh;
+// }
+// console.log(oshirBirga(massiv));
+// ================================================================
+// 52.Template string yordamida ya’ni backticlar orqali “ ushbu
+// formatdagi stringni hosil qiling.
+// var natija; -> sizning kodingiz.
+// Natija: “Donyor Olimov” ko’rinishida bo’lsin.
+// var ism = "Donyor";
+// var familiya = "Olimov";
+// console.log(`${ism} ${familiya}`);
+//================================================================
+// 53.Quyidagi namunani ternary operator ko’rinishida yozing.
+// var holatiYaxshimi = true;
+// var holati = holatiYaxshimi ? "yaxshi" : "yaxshi emas";
+// console.log(holati);
+//===============================================================
+// 54.Funksiya string qabul qiladi. Agar ushbu stringning uzunligi.
+// juft bo’lsa funksiya true qaytarsin, aks holda false
+// function sozUzunligi(str) {
+//   if (str.length % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(sozUzunligi("olma"));
+// ===============================================================
+// 55.Funksiya 2ta argument qabul qiladi. Ikkala argument ham
+// son, funksiya 1-sonni 2-songa darajaga ko’tarilgan qiymatni
+// qaytarsin.
+// function daraja(x, y) {
+//   return x ** y;
+// }
+// console.log(daraja(10, 10));
+// ===============================================================
+// 56.Funksiya massiv qabul qiladi. Ushbu funksiya massivning
+// so’nggi elementini qaytarib bersin.
+// function songiElement(arr) {
+//   return arr[arr.length - 1];
+// }
+// console.log(songiElement([1, 2, "olma"]));
+//====================================================================
+// 57.Kabisa yilini aniqlaydigan funksiya yasang. Agar kiritilgan
+// yil kabisa bo’lsa funksiya true qaytaradi, aks holda false. Kabisa
+// yili 4ga bo’linadigan yil bo’lib, lekin 100ga bo’linsa u holda
+// 400ga ham bo’linganidagina kabisa hisoblanadi.
+// function kabisa(yil) {
+//   if ((yil % 4 === 0 && yil % 100 !== 0) || yil % 400 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(kabisa(1968));
+//==================================================================
+// 58.Funskiyaga so’z kiritilsa funksiya ushbu so’zni birinchi
+// harfisiz qaytarib bersin.
+// function soz(word) {
+//   return word.slice(1);
+// }
+// console.log(soz("olloberdi"));
+//============================================================
+// 59.Boolen qiymatini teskarisini qaytarib beradigan funksiya
+// yasang.
+// function teskariBool(bool) {
+//   return !bool;
+// }
+// console.log(teskariBool(false));
+//==========================================================
+// 60.Funskiya son qabul qiladi, agar son juft bo’lsa funskiya “juft”
+// qaytaradi, agar toq bo’lsa “toq” qaytarsin.
+// function juftMiToqmi(son) {
+//   if (son % 2 === 0) {
+//     return "juft";
+//   } else {
+//     return "toq";
+//   }
+// }
+// console.log(juftMiToqmi(3));
